@@ -56,6 +56,7 @@ let majorVersion = "7";
         ./gcc8-asan-glibc-2.34.patch
 
         ./0001-Fix-build-for-glibc-2.31.patch
+        ../9/fix-struct-redefinition-on-glibc-2.36.patch
       ]
       ++ optional (targetPlatform != hostPlatform) ../libstdc++-target.patch
       ++ optionals targetPlatform.isNetBSD [
